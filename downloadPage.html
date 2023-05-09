@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Téléchargement</title>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <p class="title">Téléchargement</p>
+            <button class="button" id="back">Retour</button>
+
+            <script>
+                const buttonBack = document.getElementById("back");
+                buttonBack.addEventListener("click", function() {
+                    window.location.href = "main.html";
+                })
+            </script>
+        </div>
+    </header>
+    <div class="infoBox">
+        <div class="downloadPage">
+            <div class="github">
+                <img class="pic" src="asset/logo/github.png" alt="Github logo">
+                <p class="titleBox">Github</p>
+                <p class="textBox">Code source et information supplémentaire</p>
+                <button class="buttonBox" id="githubButton">Accéder</button>
+
+                <script>
+                    const openGithubButton = document.getElementById("githubButton");
+                    openGithubButton.addEventListener("click", function() {
+                        window.open("https://github.com/HookSandeer/ASCII-Art", "_blank");
+                    });
+                </script>
+            </div>
+
+            <div class="codeSource">
+                <img class="pic" src="asset/logo/zip.png" alt="ZIP Folder logo">
+                <p class="titleBox">Code Source</p>
+                <p class="textBox">Dossier compréssé contenant le code source</p>
+                <button class="buttonBox" id="codeSourceButton">Télécharger</button>
+
+                <script>
+                    const downloadCodeSource = document.getElementById("codeSourceButton");
+                    downloadCodeSource.addEventListener("click", function() {
+                        window.open("https://github.com/HookSandeer/ASCII-Art/archive/refs/tags/v4.0.zip");
+                    });
+                </script>
+            </div>
+
+            <div class="download">
+                <img class="pic" src="asset/logo/download.png" alt="Download Logo">
+                <p class="titleBox">Application</p>
+                <p class="textBox">Executable windows portable (pas d'installation nécessaire)</p>
+                <button class="buttonBox" id="downloadButton">Télécharger</button>
+
+                <script>
+                    const downloadButton = document.getElementById("downloadButton");
+                    downloadButton.addEventListener("click", function() {
+                        window.open("https://github.com/HookSandeer/ASCII-Art/releases/download/v4.0/Ascii_Art_Generator.exe");
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

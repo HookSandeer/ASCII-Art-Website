@@ -1,13 +1,17 @@
-// JS
+// By HookSander || Javascript
 
-const buttonDownloadApp = document.getElementById("download");
-const buttonDowloadCodeSource = document.getElementById("downloadCodeSource")
+const openGithubButton = document.getElementById("githubButton");
+const downloadCodeSource = document.getElementById("codeSourceButton");
+const downloadButton = document.getElementById("downloadButton");
 
-buttonDownloadApp.addEventListener("click", function() {
-    window.open("https://github.com/HookSandeer/ASCII-Art/archive/refs/heads/main.zip")
-})
+openGithubButton.addEventListener("click", function() {
+    window.open("https://github.com/HookSandeer/ASCII-Art", "_blank");
+});
 
-buttonDowloadCodeSource.addEventListener("click", function() {
-    window.open("")
-})
+downloadCodeSource.addEventListener("click", function() {
+    window.open("https://github.com/HookSandeer/ASCII-Art/archive/refs/tags/v4.0.zip");
+});
 
+downloadButton.addEventListener("click", function() {
+    window.open("https://github.com/HookSandeer/ASCII-Art/releases/download/v4.0/Ascii_Art_Generator.exe");
+});

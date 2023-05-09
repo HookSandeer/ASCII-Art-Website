@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+html {
+    background-color: #1E1E1E;
+}
+
+.box {
+    display: flex;
+    border: white solid;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    height: 100px;
+}
+
+.title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    margin-left: 100px;
+    border: #00308F, solid;
+    border-radius: 1000px;
+    background-color: #00308F;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.divTitle {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.divText {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-items: center;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2;
+    
+    }
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        color: white;
+        font-family: 'Kanit', sans-serif;
+    }
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        
+    }
+    .div4 { 
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .div5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .div6 {
+        grid-area: 3 / 2 / 4 / 3;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+    } 
+    

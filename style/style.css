@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 html {
-    background-color: #1E1E1E;
+    background-color: #1b1f23;
 }
 
 .box {
@@ -31,6 +31,7 @@ html {
     width: 200px;
     height: 50px;
     font-family: 'Kanit', sans-serif;
+    font-weight: bold;
     font-size: 20px;
     font-style: italic;
 }
@@ -81,4 +82,83 @@ html {
         color: white;
         font-family: 'Kanit', sans-serif;
     } 
-    
+
+
+.downloadPage {
+    display: grid;
+    margin: auto;
+    margin-top: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+    .github { 
+        grid-area: 2 / 2 / 3 / 3;
+        color: white;border-radius: 40px;
+        border: #303030 solid;
+        background-color: #303030;
+        height: 400px;
+        width: 300px;
+    }
+
+    .codeSource { 
+        grid-area: 2 / 3 / 3 / 4;
+        color: white;border-radius: 40px;
+        border: #303030 solid;
+        background-color: #303030;
+        height: 400px;
+        width: 300px;
+    }
+
+    .download {
+        grid-area: 2 / 4 / 3 / 5;
+        color: white;border-radius: 40px;
+        border: #303030 solid;
+        background-color: #303030;
+        height: 400px;
+        width: 300px;
+    }
+
+    .titleBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .textBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .pic {
+        width: 100px;
+        margin: auto;
+        display: flex;
+    }
+
+    .buttonBox {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: #00308F, solid;
+        border-radius: 1000px;
+        background-color: #00308F;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: italic;
+    }

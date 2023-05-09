@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script type="module" src="script/script.js"></script>
     <title>ACSII-Art</title>
 </head>
 <body>
     <header>
         <div class="box">
             <p class="title">Générateur ASCII-Art</p>
-            <button class="button" id="downloadApp">Télécharger</button>
-            <button class="button" id="downloadCodeSource"></button>
+            <button class="button" id="download">Télécharger</button>
+
+            <script>
+                const buttonDownloadApp = document.getElementById("download");
+
+                buttonDownloadApp.addEventListener("click", function() {
+                    window.location.href = "downloadPage.html";
+                });
+            </script>
+            
         </div>
     </header>
     <div class="parent">

@@ -18,5 +18,5 @@ downloadButton.addEventListener("click", function() {
 });
 
 buttonBack.addEventListener("click", function() {
-    window.location.href = "https://hooksandeer.github.io/ASCII-Art-Website/";
+    window.location.href = "https://hooksandeer.github.io/Antonin-ASCII-Art/";
 });

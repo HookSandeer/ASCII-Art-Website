@@ -197,4 +197,17 @@ Responsive Mobile :
         text-align: center;
         color: black;
     }
+    .parent {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:  "div1"
+                                "div2"
+                                "div3"
+                                "div4"
+                                "div5"
+                                "div7"
+                                "div8";
+    }
 }

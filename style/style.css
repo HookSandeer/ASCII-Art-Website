@@ -172,3 +172,29 @@ html {
         font-size: 20px;
         font-style: italic;
     }
+
+/*
+Responsive Mobile :
+*/
+
+@media(max-width: 767px) {
+
+    .box {
+        display: flex;
+        border: white solid;
+        background-color : white  ;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-left: 2%;
+        height: 10%;
+    }
+    
+    .title {
+        font-family: 'Kanit', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+}
